@@ -1,0 +1,140 @@
+.title {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.item-title {
+  font-size: 1.25rem;
+}
+
+.article {
+  &-info {
+    display: inline-flex;
+    align-items: center;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      padding: 0 6px;
+      line-height: 1;
+    }
+
+    &__data {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.block-title {
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.comments {
+  &-count {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.125rem;
+
+    span {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &-block {
+    border-left: 2px solid #d3d4d5;
+    padding-left: 8px;
+    margin: 32px 0;
+
+    div {
+      margin-bottom: 6px;
+    }
+
+    &-by {
+      border-right: 2px solid #d3d4d5;
+      padding: 0 8px;
+      font-style: italic;
+    }
+
+    &-date {
+      padding: 0 8px;
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin: 0;
+    }
+  }
+}
+
+.answers-button {
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 8px;
+
+  &:hover {
+    background-color: #d3d4d5;
+    transition: background-color 0.15s ease-in-out;
+  }
+
+  &:active {
+    background-color: #f8f9fa;
+    transition: background-color 0.15s ease-in-out;
+  }
+}
+
+.subcomments {
+  &-block {
+    margin: 16px 0 0 8px;
+    padding-left: 8px;
+    border-left: 2px solid #d3d4d5;
+
+    div {
+      margin-bottom: 6px;
+    }
+
+    &-by {
+      border-right: 2px solid #d3d4d5;
+      padding: 0 8px;
+      font-style: italic;
+    }
+
+    &-date {
+      padding: 0 8px;
+    }
+
+    &-delete {
+      padding: 0 8px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.articles-error {
+  padding: 200px 100px;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    font-size: 24px;
+  }
+
+  Button {
+    font-size: 18px;
+  }
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0;
+  margin: 0;
+}
